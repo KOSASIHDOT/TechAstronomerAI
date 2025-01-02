@@ -6,5 +6,5 @@ def load_radio_signal(file_path):
 
     return signal_data
 
-file_path = "radio_signal.wav"
+file_path = "radio_signal.wav" 
 radio_signal = load_radio_signal(file_path)
