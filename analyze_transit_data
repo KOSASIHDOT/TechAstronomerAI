@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 def analyze_transit_data(data_file):
     # Load transit light curve data
     data = pd.read_csv(data_file)
-    
+     
     # Extract time and brightness values
     time = data['Time']
     brightness = data['Brightness']
