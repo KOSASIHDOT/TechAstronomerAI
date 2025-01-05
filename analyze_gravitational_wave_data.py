@@ -14,6 +14,16 @@ def analyze_gravitational_wave_data(data):
     
     return analyzed_peaks
 
+def classify_peak(amplitude, duration):
+    # Classify the peak based on its characteristics
+    if amplitude > threshold_amplitude and duration > threshold_duration:
+        return 'Cataclysmic event'
+    elif amplitude > threshold_amplitude:
+        return 'Black hole merger'
+    else:
+        return 'Unknown'
+
+
 def process_data(data):
     # Apply signal processing techniques to the data
     processed_data = your_signal_processing_function(data)
@@ -47,11 +57,4 @@ def calculate_duration(data, peak):
     
     return duration
 
-def classify_peak(amplitude, duration):
-    # Classify the peak based on its characteristics
-    if amplitude > threshold_amplitude and duration > threshold_duration:
-        return 'Cataclysmic event'
-    elif amplitude > threshold_amplitude:
-        return 'Black hole merger'
-    else:
-        return 'Unknown'
+
